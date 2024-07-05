@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Only CSS Dropdown Side Menu</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="content">
+        <div class="map-container">
+            <img src="../img/F2.png" usemap=".info-booth" class="map" id="concertImage" />
+
+            <map name="tbooth">
+                <area class="tbooth" title="Ticket Booth" coords="312,852,332,853,333,832,312,831" shape="poly" />
+            </map>
+        </div>
+    </div>
+    <input type="checkbox" id="trigger-nav" checked />
+    <div class="navigation">
+        <nav>
+            <ul class="main-list" id="map-list">
+                <button class="btn">
+                    <a href="../index.html">Home</a>
+                </button>
+                <button class="btn">
+                    <a href="#">Search</a>
+                </button>
+                <button class="btn">
+                    <a href="https://www.google.com/">Event Home</a>
+                </button>
+                <button class="btn">
+                    <a href="#">Bookmark</a>
+                </button>
+                <button class="btn">
+                    <a href="PDF.pdf" download="example.pdf">Download PDF</a>
+                </button>
+                <hr />
+                <li>
+                    <button class="btn" id="btn01" onclick="switchMap('tbooth')" style="margin: 0px">
+                        <a href="#">Ticket Booth</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <label for="trigger-nav">☰</label>
+    </div>
+    <script>
+        function switchMap(mapName) {
+            document.getElementById("concertImage").useMap = `.${mapName}`;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.maphilight.min.js"></script>
+    <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/tbooth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Only CSS Dropdown Side Menu</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="content">
+        <div class="map-container">
+            <img src="../img/F2.png" usemap=".info-booth" class="map" id="concertImage" />
+
+            <map name="optent01">
+                <area class="optent01" title="Open Tent" coords="366,688,389,693,393,672,370,667" shape="poly" />
+            </map>
+            <map name="optent02">
+                <area class="optent02" title="Open Tent" coords="414,698,437,703,441,683,418,678" shape="poly" />
+            </map>
+            <map name="optent03">
+                <area class="optent03" title="Open Tent" coords="462,709,485,714,489,693,466,689" shape="poly" />
+            </map>
+        </div>
+    </div>
+    <input type="checkbox" id="trigger-nav" checked />
+    <div class="navigation">
+        <nav>
+            <ul class="main-list" id="map-list">
+                <button class="btn">
+                    <a href="../index.html">Home</a>
+                </button>
+                <button class="btn">
+                    <a href="#">Search</a>
+                </button>
+                <button class="btn">
+                    <a href="https://www.google.com/">Event Home</a>
+                </button>
+                <button class="btn">
+                    <a href="#">Bookmark</a>
+                </button>
+                <button class="btn">
+                    <a href="PDF.pdf" download="example.pdf">Download PDF</a>
+                </button>
+                <hr />
+                <h1>Open Tents</h1>
+                <li>
+                    <button class="btn" id="btn01" onclick="switchMap('optent01')" style="margin: 0px">
+                        <a href="#">Open Tent: 01</a>
+                    </button>
+                    <button class="btn" id="btn02" onclick="switchMap('optent02')" style="margin: 0px">
+                        <a href="#">Open Tent: 02</a>
+                    </button>
+                    <button class="btn" id="btn03" onclick="switchMap('optent03')" style="margin: 0px">
+                        <a href="#">Open Tent: 03</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <label for="trigger-nav">☰</label>
+    </div>
+    <script>
+        function switchMap(mapName) {
+            document.getElementById("concertImage").useMap = `.${mapName}`;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.maphilight.min.js"></script>
+    <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/otent.js"></script>
+</body>
+
+</html>
