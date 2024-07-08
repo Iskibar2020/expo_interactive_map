@@ -37,7 +37,6 @@ label {
 
 .img {
   width: 100%;
-  height: 400px;
   background-color: rgba(236, 240, 241, 1);
   margin: 50px 0;
 }
@@ -52,6 +51,7 @@ label {
   position: fixed;
   margin-left: -200px;
   transition: all 300ms;
+  overflow: auto;
 }
 
 .navigation nav .main-list {
@@ -105,6 +105,14 @@ input[type="checkbox"]:checked + .navigation {
   margin-left: 0px;
 }
 
+#searchResults input {
+  display: block;
+  margin-left: 20px;
+  width: 150px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
 .highlight {
   outline: 3px solid red;
   background-color: blanchedalmond; /* Customize the highlight style */
@@ -142,4 +150,10 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.bookmark-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: right;
 }
