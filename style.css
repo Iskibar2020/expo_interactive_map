@@ -24,6 +24,9 @@ input {
 
 label {
   cursor: pointer;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .content {
@@ -36,21 +39,20 @@ label {
 }
 
 .img {
-  width: 100%;
+  width: 100vw;
   background-color: rgba(236, 240, 241, 1);
   margin: 50px 0;
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 200px;
+  width: 12vw;
   background-color: rgba(127, 140, 141, 1);
-  position: fixed;
-  margin-left: -200px;
-  transition: all 300ms;
+  margin-left: -220px; /* Adjusted for correct off-screen placement */
+  transition: margin-left 300ms;
   overflow: auto;
 }
 
@@ -74,14 +76,6 @@ label {
   color: rgba(255, 255, 255, 1);
 }
 
-label {
-  margin-left: 220px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 50px;
-}
-
 .sublist-item {
   font-size: 14px;
 }
@@ -101,14 +95,24 @@ label {
   overflow: auto;
 }
 
-input[type="checkbox"]:checked + .navigation {
-  margin-left: 0px;
+input[type="checkbox"]:checked ~ label {
+  left: 210px; /* Adjust according to your navigation width and margin */
+}
+
+/* Adjust the navigation when checked */
+input[type="checkbox"]:checked ~ .navigation {
+  margin-left: 0;
 }
 
 #searchResults input {
   display: block;
   margin-left: 20px;
   width: 150px;
+  height: 20px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
@@ -156,4 +160,40 @@ h1 {
   margin-left: 10px;
   cursor: pointer;
   text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    width: 100vw;
+  }
+
+  .content {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .navigation {
+    width: 50vw;
+    overflow: auto;
+    height: 50vh;
+  }
+
+  label {
+    margin-left: 10px;
+    top: 10px;
+  }
+
+  #searchResults input {
+    width: 20vw;
+    margin: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .btn a {
+    font-size: 16px;
+  }
 }
