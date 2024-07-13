@@ -1,62 +1,421 @@
 // Array of button data
 const buttonsData = [
-  { id: "btn01", href: "#", text: "Info Booth" },
-  { id: "btn02", href: "#", text: "Vendors" },
-  { id: "btn03", href: "#", text: "Beer & Drink Garden" },
-  { id: "btn04", href: "#", text: "Stage" },
-  { id: "btn05", href: "#", text: "Ticket Booth" },
-  { id: "btn06", href: "#", text: "Open Tent" },
-  { id: "btn07", href: "#", text: "Disabled" },
-  { id: "btn08", href: "#", text: "Restrooms" },
-  { id: "btn09", href: "#", text: "Vendors Parking" },
-  { id: "btn10", href: "#", text: "Overflow Parking" },
-  { id: "btn11", href: "#", text: "Kids Zone" },
-  { id: "btn12", href: "#", text: "Medical Booth" },
+  { id: "btn01", href: "#", text: ["Info Booth", ""] },
+  { id: "btn02", href: "#", text: ["Vendors", ""] },
+  { id: "btn03", href: "#", text: ["Beer & Drink Garden", ""] },
+  { id: "btn04", href: "#", text: ["Stage", ""] },
+  { id: "btn05", href: "#", text: ["Ticket Booth", ""] },
+  { id: "btn06", href: "#", text: ["Open Tent", ""] },
+  { id: "btn07", href: "#", text: ["Disabled", ""] },
+  { id: "btn08", href: "#", text: ["Restrooms", ""] },
+  { id: "btn09", href: "#", text: ["Vendors Parking", ""] },
+  { id: "btn10", href: "#", text: ["Overflow Parking", ""] },
+  { id: "btn11", href: "#", text: ["Kids Zone", ""] },
+  { id: "btn12", href: "#", text: ["Medical Booth", ""] },
 ];
 
 const vendorData = [
-  { id: "vnd01", href: "#", text: "Vendor 01" },
-  { id: "vnd02", href: "#", text: "Vendor 02" },
-  { id: "vnd03", href: "#", text: "Vendor 03" },
-  { id: "vnd04", href: "#", text: "Vendor 04" },
-  { id: "vnd05", href: "#", text: "Vendor 05" },
-  { id: "vnd06", href: "#", text: "Vendor 06" },
-  { id: "vnd07", href: "#", text: "Vendor 07" },
-  { id: "vnd08", href: "#", text: "Vendor 08" },
-  { id: "vnd09", href: "#", text: "Vendor 09" },
-  { id: "vnd10", href: "#", text: "Vendor 10" },
-  { id: "vnd11", href: "#", text: "Vendor 11" },
-  { id: "vnd12", href: "#", text: "Vendor 12" },
-  { id: "vnd13", href: "#", text: "Vendor 13" },
-  { id: "vnd14", href: "#", text: "Vendor 14" },
-  { id: "vnd15", href: "#", text: "Vendor 15" },
-  { id: "vnd16", href: "#", text: "Vendor 16" },
-  { id: "vnd17", href: "#", text: "Vendor 17" },
-  { id: "vnd18", href: "#", text: "Vendor 18" },
-  { id: "vnd19", href: "#", text: "Vendor 19" },
-  { id: "vnd20", href: "#", text: "Vendor 20" },
-  { id: "vnd21", href: "#", text: "Vendor 21" },
-  { id: "vnd22", href: "#", text: "Vendor 22" },
-  { id: "vnd23", href: "#", text: "Vendor 23" },
-  { id: "vnd24", href: "#", text: "Vendor 24" },
-  { id: "vnd25", href: "#", text: "Vendor 25" },
-  { id: "vnd26", href: "#", text: "Vendor 26" },
-  { id: "vnd27", href: "#", text: "Vendor 27" },
-  { id: "vnd28", href: "#", text: "Vendor 28" },
-  { id: "vnd29", href: "#", text: "Vendor 29" },
-  { id: "vnd30", href: "#", text: "Vendor 30" },
-  { id: "vnd31", href: "#", text: "Vendor 31" },
-  { id: "vnd32", href: "#", text: "Vendor 32" },
-  { id: "vnd33", href: "#", text: "Vendor 33" },
-  { id: "vnd34", href: "#", text: "Vendor 34" },
-  { id: "vnd35", href: "#", text: "Vendor 35" },
-  { id: "vnd36", href: "#", text: "Vendor 36" },
-  { id: "vnd37", href: "#", text: "Vendor 37" },
-  { id: "vnd38", href: "#", text: "Vendor 38" },
-  { id: "vnd39", href: "#", text: "Vendor 39" },
-  { id: "vnd40", href: "#", text: "Vendor 40" },
+  {
+    id: "vnd01",
+    href: "#",
+    text: ["Vendor 01", " 01"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd02",
+    href: "#",
+    text: ["Vendor 02", " 02"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd03",
+    href: "#",
+    text: ["Vendor 03", " 03"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd04",
+    href: "#",
+    text: ["Vendor 04", " 04"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd05",
+    href: "#",
+    text: ["KP WOODWORKING AND CREATIONS", " 05"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd06",
+    href: "#",
+    text: ["HUMANA", " 06"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd07",
+    href: "#",
+    text: ["THE UNDERGROUND CLOSET", " 07"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd08",
+    href: "#",
+    text: ["IMPULSIVE, INC", " 08"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd09",
+    href: "#",
+    text: ["Vendor 09", " 09"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd10",
+    href: "#",
+    text: ["Vendor 10", " 10"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd11",
+    href: "#",
+    text: ["Vendor 11", " 11"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd12",
+    href: "#",
+    text: ["EVOLUTIONARY CREATTIONS", " 12"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd13",
+    href: "#",
+    text: ["EVOLUTIONARY CREATTIONS", " 13"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd14",
+    href: "#",
+    text: ["PAW PAWS BAKERY", " 14"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd15",
+    href: "#",
+    text: ["PHYSICS VISIONS", " 15"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd16",
+    href: "#",
+    text: ["RAGE INC", " 16"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd17",
+    href: "#",
+    text: ["Vendor 17", " 17"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd18",
+    href: "#",
+    text: ["Vendor 18", " 18"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd19",
+    href: "#",
+    text: ["Vendor 19", " 19"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd20",
+    href: "#",
+    text: ["Vendor 20", " 20"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd21",
+    href: "#",
+    text: ["Vendor 21", " 21"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd22",
+    href: "#",
+    text: ["LAKE STATION FIRE DEPT", " 22"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd23",
+    href: "#",
+    text: ["TITANS CRAFTS", " 23"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd24",
+    href: "#",
+    text: ["TITANS CRAFTS", " 24"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd25",
+    href: "#",
+    text: ["Vendor 25", " 25"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd26",
+    href: "#",
+    text: ["Vendor 26", " 26"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd27",
+    href: "#",
+    text: ["Vendor 27", " 27"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd28",
+    href: "#",
+    text: ["Vendor 28", " 28"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd29",
+    href: "#",
+    text: ["Vendor 29", " 29"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd30",
+    href: "#",
+    text: ["JEN'S HOME GOODIES", " 30"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd31",
+    href: "#",
+    text: ["AMELIA'S ART", " 31"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd32",
+    href: "#",
+    text: ["C&C CUSTOM SHIRTS", " 32"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd33",
+    href: "#",
+    text: ["Vendor 33", " 33"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd34",
+    href: "#",
+    text: ["Vendor 34", " 34"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd35",
+    href: "#",
+    text: ["Vendor 35", " 35"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd36",
+    href: "#",
+    text: ["Vendor 36", " 36"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd37",
+    href: "#",
+    text: ["VFW", " 37"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd38",
+    href: "#",
+    text: ["AMERICAN LEGION", " 38"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd39",
+    href: "#",
+    text: ["EAGLES", " 39"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
+  {
+    id: "vnd40",
+    href: "#",
+    text: ["Vendor 40", " 40"],
+    img: "https://t.ly/r38NN",
+    des: "Image Description",
+    Email: "vendor@example.com",
+    Phone: "+1234567890",
+    Website: "www.vendor.com",
+  },
 ];
-
 const tentData = [
   { id: "tnt01", href: "#", text: "Open Tent 01" },
   { id: "tnt02", href: "#", text: "Open Tent 02" },
@@ -162,12 +521,12 @@ function createButtons(buttons) {
     // Create anchor element
     const anchor = document.createElement("a");
     anchor.href = button.href;
-    anchor.textContent = button.text;
+    anchor.textContent = button.text[0];
 
     // Create bookmark icon
     const bookmarkIcon = document.createElement("i");
     bookmarkIcon.className = "fas fa-bookmark bookmark-icon";
-
+    bookmarkIcon.textContent = button.text[1];
     // Check if the item is already bookmarked
     if (bookmarkedItems.find((item) => item.id === button.id)) {
       bookmarkIcon.classList.add("bookmarked");
@@ -182,6 +541,7 @@ function createButtons(buttons) {
     // Append anchor and bookmark icon to button
     btn.appendChild(anchor);
     btn.appendChild(bookmarkIcon);
+    li.appendChild(btn);
 
     // Add mouseover event listener for each button
     btn.addEventListener("mouseover", function () {
@@ -194,14 +554,87 @@ function createButtons(buttons) {
       handleOParkMouseover(button.id);
     });
 
-    // Add mouseover event listener for each button
+    // Add click event listener for each button
     btn.addEventListener("click", function () {
       handleButtonClick(button.id);
+      handleVendorClick(button.id);
     });
 
-    // Append button to li, li to ul
-    li.appendChild(btn);
+    // Create and append hr element
+    const hr = document.createElement("hr");
+    hr.className = "item-divider";
+    li.appendChild(hr);
+    // Append li to ul
     buttonList.appendChild(li);
+  });
+}
+
+function VendorClick(DataId, id) {
+  const buttonList = document.getElementById("map-list");
+  buttonList.innerHTML = ""; // Clear existing content
+
+  // Create the button
+  const backButton = document.createElement("button");
+  backButton.textContent = "< Back"; // Button text
+  backButton.className = "back-button"; // Optional: Add a CSS class for styling
+  backButton.addEventListener("click", function () {
+    // Optional: Add functionality to go back or hide vendor info
+    buttonList.innerHTML = "";
+    createButtons(DataId); // Clear vendor info when clicking back button
+  });
+  buttonList.appendChild(backButton); // Append the button to map-list
+
+  DataId.forEach((Data) => {
+    if (Data.id == id) {
+      console.log(Data);
+      // Second inner div for description
+      const titleDiv = document.createElement("h1");
+      titleDiv.textContent = Data.text[0];
+      titleDiv.className = "vendor-header";
+      buttonList.appendChild(titleDiv);
+
+      // Create first div with two equal divs inside
+      const div1 = document.createElement("div");
+      div1.className = "vendor-info";
+
+      // First inner div for message or image
+      const messageDiv = document.createElement("div");
+      // Example: Replace text with an image
+      const image = document.createElement("img");
+      image.src = Data.img;
+      image.alt = "Vendor Image";
+      image.style.width = "95%"; // Set image width to 50%
+      messageDiv.appendChild(image); // Append image to messageDiv
+      messageDiv.className = "vendor-message";
+      div1.appendChild(messageDiv);
+
+      // Second inner div for description
+      const descriptionDiv = document.createElement("div");
+      descriptionDiv.textContent = Data.des;
+      descriptionDiv.className = "vendor-description";
+      div1.appendChild(descriptionDiv);
+
+      // Append first div to buttonList
+      buttonList.appendChild(div1);
+
+      // Create second div for email
+      const emailDiv = document.createElement("div");
+      emailDiv.textContent = Data.Email;
+      emailDiv.className = "vendor-contact";
+      buttonList.appendChild(emailDiv);
+
+      // Create third div for phone number
+      const phoneDiv = document.createElement("div");
+      phoneDiv.textContent = Data.Phone;
+      phoneDiv.className = "vendor-contact";
+      buttonList.appendChild(phoneDiv);
+
+      // Create fourth div for website
+      const websiteDiv = document.createElement("div");
+      websiteDiv.textContent = Data.Website;
+      websiteDiv.className = "vendor-contact";
+      buttonList.appendChild(websiteDiv);
+    }
   });
 }
 
@@ -448,6 +881,133 @@ function handleVendorMouseover(buttonId) {
     case "vnd40":
       switchMap("vendor40");
       highlightArea(".vendor40", 0, 0, 5);
+      break;
+    default:
+      break;
+  }
+}
+
+function handleVendorClick(buttonId) {
+  switch (buttonId) {
+    case "vnd01":
+      VendorClick(vendorData, "vnd01");
+      break;
+    case "vnd02":
+      VendorClick(vendorData, "vnd02");
+      break;
+    case "vnd03":
+      VendorClick(vendorData, "vnd03");
+      break;
+    case "vnd04":
+      VendorClick(vendorData, "vnd04");
+      break;
+    case "vnd05":
+      VendorClick(vendorData, "vnd05");
+      break;
+    case "vnd06":
+      VendorClick(vendorData, "vnd06");
+      break;
+    case "vnd07":
+      VendorClick(vendorData, "vnd07");
+      break;
+    case "vnd08":
+      VendorClick(vendorData, "vnd08");
+      break;
+    case "vnd09":
+      VendorClick(vendorData, "vnd09");
+      break;
+    case "vnd10":
+      VendorClick(vendorData, "vnd10");
+      break;
+    case "vnd11":
+      VendorClick(vendorData, "vnd11");
+      break;
+    case "vnd12":
+      VendorClick(vendorData, "vnd12");
+      break;
+    case "vnd13":
+      VendorClick(vendorData, "vnd13");
+      break;
+    case "vnd14":
+      VendorClick(vendorData, "vnd14");
+      break;
+    case "vnd15":
+      VendorClick(vendorData, "vnd15");
+      break;
+    case "vnd16":
+      VendorClick(vendorData, "vnd16");
+      break;
+    case "vnd17":
+      VendorClick(vendorData, "vnd17");
+      break;
+    case "vnd18":
+      VendorClick(vendorData, "vnd18");
+      break;
+    case "vnd19":
+      VendorClick(vendorData, "vnd19");
+      break;
+    case "vnd20":
+      VendorClick(vendorData, "vnd20");
+      break;
+    case "vnd21":
+      VendorClick(vendorData, "vnd21");
+      break;
+    case "vnd22":
+      VendorClick(vendorData, "vnd22");
+      break;
+    case "vnd23":
+      VendorClick(vendorData, "vnd23");
+      break;
+    case "vnd24":
+      VendorClick(vendorData, "vnd24");
+      break;
+    case "vnd25":
+      VendorClick(vendorData, "vnd25");
+      break;
+    case "vnd26":
+      VendorClick(vendorData, "vnd26");
+      break;
+    case "vnd27":
+      VendorClick(vendorData, "vnd27");
+      break;
+    case "vnd28":
+      VendorClick(vendorData, "vnd28");
+      break;
+    case "vnd29":
+      VendorClick(vendorData, "vnd29");
+      break;
+    case "vnd30":
+      VendorClick(vendorData, "vnd30");
+      break;
+    case "vnd31":
+      VendorClick(vendorData, "vnd31");
+      break;
+    case "vnd32":
+      VendorClick(vendorData, "vnd32");
+      break;
+    case "vnd33":
+      VendorClick(vendorData, "vnd33");
+      break;
+    case "vnd34":
+      VendorClick(vendorData, "vnd34");
+      break;
+    case "vnd35":
+      VendorClick(vendorData, "vnd35");
+      break;
+    case "vnd36":
+      VendorClick(vendorData, "vnd36");
+      break;
+    case "vnd37":
+      VendorClick(vendorData, "vnd37");
+      break;
+    case "vnd38":
+      VendorClick(vendorData, "vnd38");
+      break;
+    case "vnd39":
+      VendorClick(vendorData, "vnd39");
+      break;
+    case "vnd40":
+      VendorClick(vendorData, "vnd40");
       break;
     default:
       break;
