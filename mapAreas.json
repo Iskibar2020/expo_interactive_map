@@ -252,6 +252,60 @@
                 "title": "Vendor 40",
                 "coords": "508,779,522,782,525,768,512,765",
                 "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor A",
+                "coords": "508,779,522,782,525,768,512,765",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor A",
+                "coords": "396,445,421,452,424,439,400,432",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor B",
+                "coords": "425,453,449,458,453,446,429,440",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor C",
+                "coords": "454,461,478,466,481,454,457,447",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor D",
+                "coords": "482,467,507,474,511,461,486,454",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor E",
+                "coords": "512,474,536,481,540,468,514,461",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor F",
+                "coords": "540,481,565,487,569,475,543,468",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor G",
+                "coords": "560,505,585,511,589,499,564,492",
+                "shape": "poly"
+            },
+            {
+                "class": "vendor",
+                "title": "Vendor H",
+                "coords": "556,521,581,528,584,515,560,508",
+                "shape": "poly"
             }
         ]
     },
@@ -897,6 +951,127 @@
                 "class": "vendor40",
                 "title": "Vendor 40",
                 "coords": "508,779,522,782,525,768,512,765",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorA",
+        "areas": [
+            {
+                "class": "vendorA",
+                "title": "Vendor A",
+                "coords": "396,445,421,452,424,439,400,432",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorB",
+        "areas": [
+            {
+                "class": "vendorB",
+                "title": "Vendor B",
+                "coords": "425,453,449,458,453,446,429,440",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorC",
+        "areas": [
+            {
+                "class": "vendorC",
+                "title": "Vendor C",
+                "coords": "454,461,478,466,481,454,457,447",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorD",
+        "areas": [
+            {
+                "class": "vendorD",
+                "title": "Vendor D",
+                "coords": "482,467,507,474,511,461,486,454",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorE",
+        "areas": [
+            {
+                "class": "vendorE",
+                "title": "Vendor E",
+                "coords": "512,474,536,481,540,468,514,461",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorF",
+        "areas": [
+            {
+                "class": "vendorF",
+                "title": "Vendor F",
+                "coords": "540,481,565,487,569,475,543,468",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorG",
+        "areas": [
+            {
+                "class": "vendorG",
+                "title": "Vendor G",
+                "coords": "560,505,585,511,589,499,564,492",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorH",
+        "areas": [
+            {
+                "class": "vendorH",
+                "title": "Vendor H",
+                "coords": "556,521,581,528,584,515,560,508",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorI",
+        "areas": [
+            {
+                "class": "vendorI",
+                "title": "Vendor I",
+                "coords": "545,583,565,588,578,533,558,529",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorJ",
+        "areas": [
+            {
+                "class": "vendorJ",
+                "title": "Vendor J",
+                "coords": "545,583,565,588,552,644,531,639",
+                "shape": "poly"
+            }
+        ]
+    },
+    {
+        "name": "vendorK",
+        "areas": [
+            {
+                "class": "vendorK",
+                "title": "Vendor K",
+                "coords": "354,562,382,569,400,490,373,483",
                 "shape": "poly"
             }
         ]

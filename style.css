@@ -9,9 +9,14 @@ body {
 }
 
 a {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  color: #fff8ca;
+  text-decoration: underline;
 }
 
 ul {
@@ -60,10 +65,10 @@ label {
   margin-left: -15vw; /* Adjusted for correct off-screen placement */
   transition: margin-left 300ms;
   overflow: auto;
+  padding-bottom: 2vh;
 }
 
 .navigation nav .main-list {
-  margin-top: 50px;
   text-align: left;
 }
 
@@ -114,7 +119,7 @@ input[type="checkbox"]:checked ~ .navigation {
   display: block;
   margin-left: 20px;
   width: 12vw;
-  height: 20px;
+  height: 4vh;
 }
 
 ::placeholder {
@@ -139,7 +144,7 @@ area {
   width: 14vw;
   background-color: rgba(127, 140, 141, 1);
   border: none;
-  height: 40px;
+  height: 5vh;
   text-align: left;
   padding: 0 20px;
   font-family: "Open Sans", sans-serif;
@@ -194,7 +199,7 @@ h1 {
 }
 
 .back-button:hover {
-  color: rgb(0, 0, 75);
+  color: #fff8ca;
   text-decoration: none;
 }
 
@@ -290,7 +295,7 @@ h1 {
     margin: 10px;
   }
 
-  map-list .vendor-header {
+  #map-list.vendor-header {
     font-size: 1rem;
   }
 
@@ -355,8 +360,8 @@ h1 {
   }
 
   label {
-    margin-left: 22vw;
-    left: -21vw;
+    margin-left: 26vw;
+    left: -25vw;
   }
 
   input[type="checkbox"]:checked ~ label {
@@ -364,25 +369,27 @@ h1 {
   }
 
   .navigation {
-    width: 30vw;
+    width: 35vw;
     overflow: auto;
-    height: 100vh;
+    height: 40vh;
     padding-bottom: 10px;
-    margin-left: -30vw;
+    margin-left: -35vw;
   }
 
   #searchResults input {
     width: 24vw;
     margin: 10px;
+    height: 2vh;
   }
 
   ::placeholder {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   .btn {
     width: 100%;
     padding-left: 10px;
+    height: 3vh;
   }
 
   .btn a {
@@ -393,7 +400,7 @@ h1 {
   }
 
   i {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   #map-list .vendor-header {
